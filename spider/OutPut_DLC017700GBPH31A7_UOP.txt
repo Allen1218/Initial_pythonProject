@@ -1,0 +1,568 @@
+05/09/20 11:23:35.51 DTPFsrv.17:FwEventManager:message to process: :>>L FwExecuteServerSideRuleTxn name="INT_GetUnitUOP" attributes={ { class=ASSOC { class=A1 "UNIT_ID" } { class=A1 "DLC017700GBPH31A7" } } { { class=A1 "STEP_NAME" } { class=A1 "WIFI-COND" } } { { class=A1 "EQP_NAME" } { class=A1 "ITKS_E01-2FAP-01_1_WIFI-COND" } } }
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - INT_GetUnitUOP started...
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - inAttrs:
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:EQP_NAME	Value:ITKS_E01-2FAP-01_1_WIFI-COND
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:STEP_NAME	Value:WIFI-COND
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:UNIT_ID	Value:DLC017700GBPH31A7
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Received UNIT_ID:'DLC017700GBPH31A7'
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Received STEP_NAME:'WIFI-COND'
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Received EQP_NAME:'ITKS_E01-2FAP-01_1_WIFI-COND'
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sqlStatement=SELECT A.LOTID, A.TESTRESULT, A.FARESULT, A.IFDEFECT, A.IFSCRAPPED, A.TRACKINTIME  FROM TWUNITINFO A WHERE 1 = 1   AND A.UNITID = 'DLC017700GBPH31A7'
+05/09/20 11:23:35.51 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:23:35.54 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:23:35.54 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - result:
+05/09/20 11:23:35.54 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "lotid" } { class=A1 "A20050200041.036" } } { "testresult" "" } { "faresult" "" } { "ifdefect" "F" } { "ifscrapped" "F" } { "trackintime" "" }
+05/09/20 11:23:35.54 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oLotId=A20050200041.036
+05/09/20 11:23:35.63 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oLotStepName=FDR-EXPORT
+05/09/20 11:23:35.63 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sqlStatement=SELECT D.STEPTYPE, C.RESOURCETYPE, C.RESOURCEKIND  FROM FWSTEP A     , FWSTEP_N2M B     , FWSTEPVERSION C     , TWSTEPVERSION D WHERE 1 = 1   AND A.SYSID = B.FROMID   AND B.TOID = C.SYSID   AND C.SYSID = D.PARENT   AND A.NAME = 'FDR-EXPORT'  AND C.REVSTATE = 'Active' 
+05/09/20 11:23:35.63 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - result:
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "steptype" } { class=A1 "Test" } } { "resourcetype" "FDR-EXPORT" } { "resourcekind" "T" }
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - stepType=Test
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oStepName=FDR-EXPORT
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Start to Get stepType, stepResourceType, stepResourceKind !
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sqlStatement=SELECT D.STEPTYPE, C.RESOURCETYPE, C.RESOURCEKIND, C.REVISION  FROM FWSTEP A     , FWSTEP_N2M B     , FWSTEPVERSION C     , TWSTEPVERSION D WHERE 1 = 1   AND A.SYSID = B.FROMID   AND B.TOID = C.SYSID   AND C.SYSID = D.PARENT   AND A.NAME = 'WIFI-COND'  AND C.REVSTATE = 'Active' 
+05/09/20 11:23:35.67 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - result:
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "steptype" } { class=A1 "TestSampling" } } { "resourcetype" "WIFI-COND" } { "resourcekind" "T" } { "revision" "0" }
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oStepType=TestSampling
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oResourceType=WIFI-COND
+05/09/20 11:23:35.70 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oResourceKind=T
+05/09/20 11:23:35.72 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oStepName=FDR-EXPORT
+05/09/20 11:23:35.72 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - RFFetchLotSteps started...
+05/09/20 11:23:35.72 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - UtlFetchLotSteps started...
+05/09/20 11:23:35.79 DTPFsrv.17:FwProcessPlanVersion::loadAllChilds: fetch all child nodes/paths
+05/09/20 11:23:41.09 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - UtlFetchLotSteps finished...
+05/09/20 11:23:41.09 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - RFFetchLotSteps finished...
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oResult:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:lotSteps	Value:ORDERED { class=ASSOC { class=A1 "Source Step" } { class=ORDERED { class=A1 " " } "FDR-EXPORT" "FDR-EXPORT" "FDR-EXPORT" "CELL-CAL" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND" "SMT-BURNIN" "SMT-BURNIN" "DFU" "EncapsCuring-VI" "EncapsCuring-VI" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "Re-check" "Unit-To-Tray" "Unit-To-Tray" "EncapsHeightMeasurement" "EncapsCuring" "Encaps-VI" "Encaps-VI" "Re-check" "Encaps" "Encaps-Loader" } } { "Seq." { { class=A1 " " } "0480" "0480" "0480" "0470" "0490" "0500" "0460" "0450" "0450" "1080" "0440" "0440" "1070" "1070" "1070" "1070" "1070" "1070" "1070" "1040" "0435" "0435" "1430" "0430" "0420" "0420" "1030" "0410" "0405" } } { "Path" { { class=A1 " " } "PASS" "PASS" "PASS" "PASS" "TestSampling1" "TestSampling2" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "FA" "FA" "FA" "FA" "FA" "FA" "FA" "RECHECK" "PASS" "PASS" "Sampling" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" } } { "Destination Step" { { class=A1 "FDR-EXPORT" } "CELL-CAL" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND" "CELL-CAL" "CELL-CAL" "SMT-BURNIN" "DFU" "EncapsCuring-VI" "FACheck-TEST" "Re-check" "Unit-To-Tray" "DFU" "SMT-BURNIN" "WIFI-BT-COND" "CELL-CAL" "FDR-EXPORT" "WIFI-COND" "WIFI-BT-COND-2" "EncapsCuring-VI" "EncapsHeightMeasurement" "EncapsCuring" "EncapsCuring" "Encaps-VI" "Re-check" "Encaps" "Encaps-VI" "Encaps-Loader" "Baking2-VI" } } { "Seq" { { class=A1 "0480" } "0470" "0490" "0500" "0460" "0470" "0470" "0450" "1080" "0440" "1070" "1040" "0435" "1080" "0450" "0460" "0470" "0480" "0490" "0500" "0440" "1430" "0430" "0430" "0420" "1030" "0410" "0420" "0405" "0400" } } { "Stage Name" { { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" } } { "Stage Number" { { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" } } { "Step Revision$$Hidden=True$$" { { class=A1 "0" } "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "1" "1" "0" "0" "1" "0" "0" "0" } }
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:foundSteps	Value:T
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oKey=foundSteps
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oValue:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Source Step	Value:ORDERED { class=A1 " " } "FDR-EXPORT" "FDR-EXPORT" "FDR-EXPORT" "CELL-CAL" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND" "SMT-BURNIN" "SMT-BURNIN" "DFU" "EncapsCuring-VI" "EncapsCuring-VI" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "FACheck-TEST" "Re-check" "Unit-To-Tray" "Unit-To-Tray" "EncapsHeightMeasurement" "EncapsCuring" "Encaps-VI" "Encaps-VI" "Re-check" "Encaps" "Encaps-Loader"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Seq.	Value:ORDERED { class=A1 " " } "0480" "0480" "0480" "0470" "0490" "0500" "0460" "0450" "0450" "1080" "0440" "0440" "1070" "1070" "1070" "1070" "1070" "1070" "1070" "1040" "0435" "0435" "1430" "0430" "0420" "0420" "1030" "0410" "0405"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Path	Value:ORDERED { class=A1 " " } "PASS" "PASS" "PASS" "PASS" "TestSampling1" "TestSampling2" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "FA" "FA" "FA" "FA" "FA" "FA" "FA" "RECHECK" "PASS" "PASS" "Sampling" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Destination Step	Value:ORDERED { class=A1 "FDR-EXPORT" } "CELL-CAL" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND" "CELL-CAL" "CELL-CAL" "SMT-BURNIN" "DFU" "EncapsCuring-VI" "FACheck-TEST" "Re-check" "Unit-To-Tray" "DFU" "SMT-BURNIN" "WIFI-BT-COND" "CELL-CAL" "FDR-EXPORT" "WIFI-COND" "WIFI-BT-COND-2" "EncapsCuring-VI" "EncapsHeightMeasurement" "EncapsCuring" "EncapsCuring" "Encaps-VI" "Re-check" "Encaps" "Encaps-VI" "Encaps-Loader" "Baking2-VI"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Seq	Value:ORDERED { class=A1 "0480" } "0470" "0490" "0500" "0460" "0470" "0470" "0450" "1080" "0440" "1070" "1040" "0435" "1080" "0450" "0460" "0470" "0480" "0490" "0500" "0440" "1430" "0430" "0430" "0420" "1030" "0410" "0420" "0405" "0400"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Stage Name	Value:ORDERED { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Stage Number	Value:ORDERED { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Step Revision$$Hidden=True$$	Value:ORDERED { class=A1 "0" } "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "1" "1" "0" "0" "1" "0" "0" "0"
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FDR-EXPORT
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:CELL-CAL
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:SMT-BURNIN
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:DFU
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.09 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-VI
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-Loader
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Baking2-VI
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:CELL-CAL
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.10 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:SMT-BURNIN
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:DFU
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-VI
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-Loader
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.11 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Baking2-VI
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:CELL-CAL
+05/09/20 11:23:41.12 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:SMT-BURNIN
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:DFU
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.13 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-Loader
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Baking2-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion Start !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepNameObj is empty!
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - preSteps:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Baking2-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:CELL-CAL
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:DFU
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-Loader
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:SMT-BURNIN
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - preStepSeqs:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0400
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0405
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0410
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0420
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0430
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0435
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0440
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0450
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0460
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0470
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0490
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:0500
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:1030
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:1040
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:1070
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:1080
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:1430
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepRecursion End !
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - preSteps:
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Baking2-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:CELL-CAL
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:DFU
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-Loader
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Encaps-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsCuring-VI
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:EncapsHeightMeasurement
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:FACheck-TEST
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Re-check
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:SMT-BURNIN
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:Unit-To-Tray
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-BT-COND-2
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:WIFI-COND
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - isAnyPreStep is true ! 
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sStepName=WIFI-COND
+05/09/20 11:23:41.14 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oStepSeq=1080
+05/09/20 11:23:41.15 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Complete to verify Step is available ! 
+05/09/20 11:23:41.15 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sqlStatement=SELECT A.NAME  FROM FWEQPEQUIPMENT A     , FWEQPTYPE B WHERE 1 = 1   AND A.EQPTYPE = B.SYSID   AND B.NAME = 'WIFI-COND'
+05/09/20 11:23:41.15 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - result:
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_1_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_1_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_2_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_3_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_2_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_3_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_6_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_10_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_8_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_10_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_9_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_5_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_5_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_7_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_9_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_4_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_6_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_7_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-01_8_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Value:ORDERED { class=ASSOC { class=A1 "name" } { class=A1 "ITKS_E01-2FAP-02_4_WIFI-COND" } }
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - Complete to verify EqpName within current step resource list ! 
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - sqlStatement=SELECT A.EQPNAME, COUNT(A.TESTRESULT) AS testcount  FROM TWUNITTESTINFO A     , TWUNITINFO B WHERE 1 = 1   AND A.VALIDTESTRESULT = 'T'   AND A.UNITID = B.UNITID   AND A.TRACKINTIME = B.TRACKINTIME   AND A.UNITID = 'DLC017700GBPH31A7'  AND A.FARESULT IS NULL GROUP BY A.EQPNAME 
+05/09/20 11:23:41.18 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:23:41.22 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:23:41.22 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - result:
+05/09/20 11:23:41.23 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oStepName=FDR-EXPORT
+05/09/20 11:23:41.23 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - RFFetchLotSteps started...
+05/09/20 11:23:41.23 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - UtlFetchLotSteps started...   1
+05/09/20 11:23:41.30 DTPFsrv.17:FwProcessPlanVersion::loadAllChilds: fetch all child nodes/paths
+05/09/20 11:23:43.09 DTPFsrv.17:FwProcessPlanVersion::getNextStep:WARNING - Error(4-231) Could not resolve sequence '1360' for Process Plan 'A-LA0G-L-01'.
+05/09/20 11:23:43.97 DTPFsrv.17:FwProcessPlanVersion::getNextStep:WARNING - Error(4-231) Could not resolve sequence '1380' for Process Plan 'A-LA0G-L-01'.
+05/09/20 11:23:45.57 DTPFsrv.17:FwProcessPlanVersion::getNextStep:WARNING - Error(4-231) Could not resolve sequence '1400' for Process Plan 'A-LA0G-L-01'.
+05/09/20 11:23:45.75 DTPFsrv.17:FwProcessPlanVersion::getNextStep:WARNING - Error(4-231) Could not resolve sequence '1470' for Process Plan 'A-LA0G-L-01'.
+05/09/20 11:23:45.95 DTPFsrv.17:FwProcessPlanVersion::getNextStep:WARNING - Error(4-231) Could not resolve sequence '0540' for Process Plan 'A-LA0G-L-01'.
+05/09/20 11:24:05.35 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - UtlFetchLotSteps finished...
+05/09/20 11:24:05.35 DTPFsrv.17:fwFetchLotSteps:CAPITraceDiagnostic - RFFetchLotSteps finished...
+05/09/20 11:24:05.35 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oResult:
+05/09/20 11:24:05.35 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:lotSteps	Value:ORDERED { class=ASSOC { class=A1 "Source Step" } { class=ORDERED { class=A1 " " } "SMT1" "Deflux1" "Deflux1" "Deflux1-VI" "Deflux1-VI" "ICT1" "DefluxBaking1" "Re-check" "Baking1-VI" "Baking1-VI" "UnderfillPlasma1" "UnderfillPlasma1" "Re-check" "Underfill-Loader" "ContactAngle1" "Underfill1" "UnderfillAOI1" "UnderfillAOI1" "Underfill-VI" "Underfill-VI" "Re-check" "UnderfillCuring1" "UnderfillCuring1" "Re-check" "Curing-VI" "Curing-VI" "Curing-VI" "UnderfillSAT1" "DFU-NAND-INIT" "DFU-NAND-INIT" "Re-check" "Curing-IPQC" "WaterCleaning-U1" "FACheck-DFUPanel" "FACheck-DFUPanel" "DFU-VI" "DFU-VI" "SATBaking-U1" "Laser-DFU" "CarrierToMagazine" "Re-check" "LVI-DFU" "LVI-DFU" "MoldingPlasma" "MoldingPlasma" "FALAB-DFU" "Molding" "Molding" "ContactAngle-M" "MVI" "MVI" "MVI" "MVI" "MVI" "MoldingThickness" "Panel-To-LaserCarrier" "Re-check" "MoldingSAT" "Molding-IPQC" "PREFCT2" "PREFCT2" "MoldlingShift" "Laser" "WaterCleaning-M" "WaterCleaning-M" "FACheck-FCTpanel" "FACheck-FCTpanel" "TestVI" "TestVI" "MoldingWarpage" "MarkingCheck" "MarkingCheck" "MarkingCheck" "Laser-FCT" "Re-check" "LVI" "LVI" "MarkingTrenchSize" "MarkingTrenchSize" "LVI-FCT" "LVI-FCT" "DryIceCleaning" "Re-check" "CuttingSize" "FALAB-FCT" "DICVI" "DICVI" "CPFilling" "CPFilling" "Re-check" "CPFillingCuring" "CPFillingCuring" "CPFillingX-Ray" "CPFVI" "CPFVI" "CPFillingSize2" "Laser-Carrier-To-Magazine" "Re-check" "Singulation" "Singulation" "SGVI" "SGVI" "SGVI" "SingulationSize" "SputterLoad" "Re-check" "Singulation-IPQC" "Sputtering" "SputterUnload" "SPFVI" "SPFVI" "SPFVI" "BEVI" "BEVI" "Re-check" "XRF" "BE-IPQC" "BE-IPQC" "Re-check" "PeelingTest" "SMT2" "Re-check" "Deflux2" "Deflux2-VI" "Deflux2-VI" "DefluxBaking2" "Re-check" "Baking2-VI" "Baking2-VI" "Encaps-Loader" "Re-check" "Encaps" "Encaps-VI" "Encaps-VI" "EncapsCuring" "EncapsCuring" "Re-check" "Unit-To-Tray" "EncapsHeightMeasurement" "EncapsCuring-VI" "EncapsCuring-VI" "SMT-BURNIN" "SMT-BURNIN" "Re-check" "FACheck-TEST" "FACheck-TEST" "WIFI-BT-COND" "WIFI-BT-COND" "FALAB-TEST" "DFU" "DFU" "CELL-CAL" "CELL-CAL" "CELL-CAL" "CELL-CAL" "FDR-EXPORT" "FDR-EXPORT" "WIFI-COND" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND-2" "ICOS" "ICOS" "ICOS" "FVI" "FVI" "Re-work-ICOS" "OQC" "OQC" "Re-check-FVI" "HoldRoom" "HoldRoom" } } { "Seq." { { class=A1 " " } "0010" "0020" "0020" "0030" "0030" "0550" "0040" "0600" "0050" "0050" "0060" "0060" "0610" "0065" "0660" "0070" "0080" "0080" "0090" "0090" "0630" "0100" "0100" "0620" "0105" "0105" "0105" "0670" "0110" "0110" "1490" "1530" "0680" "0700" "0700" "0120" "0120" "0690" "0710" "0140" "0640" "0720" "0720" "0150" "0150" "1350" "0160" "0160" "0730" "0170" "0170" "0170" "0170" "0170" "1420" "0200" "1130" "0800" "1540" "0180" "0180" "0750" "0205" "0810" "0810" "0770" "0770" "0190" "0190" "0760" "0210" "0210" "0210" "0780" "0820" "0220" "0220" "1510" "0830" "0790" "0790" "0230" "0850" "1500" "1370" "0240" "0240" "0250" "0250" "0860" "0260" "0260" "0900" "0270" "0270" "0910" "0275" "0920" "0280" "0280" "0290" "0290" "0290" "0930" "0300" "0940" "1550" "0310" "0320" "0330" "0330" "0330" "0340" "0340" "0950" "0980" "0350" "0350" "1000" "0990" "0360" "1150" "0370" "0380" "0380" "0390" "1010" "0400" "0400" "0405" "1020" "0410" "0420" "0420" "0430" "0430" "1030" "0435" "1430" "0440" "0440" "0450" "0450" "1040" "1070" "1070" "0460" "0460" "1390" "1080" "1080" "0470" "0470" "0470" "0470" "0480" "0480" "0490" "0490" "0500" "0500" "0510" "0510" "0510" "0520" "0520" "1520" "0530" "0530" "1460" "1410" "1410" } } { "Path" { { class=A1 " " } "PASS" "PASS" "Sampling" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "RECHECK" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "SamplingIPQC" "PASS" "FA" "PASS" "PASS" "PASS" "PASS" "LASERCUT" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "FALAB" "PASS" "PASS" "Sampling" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "Sampling" "SamplingIPQC" "TestSampling" "PASS" "PASS" "PASS" "PASS" "PASS" "FA" "PASS" "PASS" "PASS" "PASS" "TestSampling" "LASERCUT" "PASS" "PASS" "RECHECK" "PASS" "PASS" "Sampling" "SamplingFAI" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "FALAB" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "Sampling" "PASS" "RECHECK" "SamplingIPQC" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "Sampling" "PASS" "RECHECK" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "PASS" "PASS" "RECHECK" "FA" "PASS" "PASS" "FALAB" "PASS" "FA" "PASS" "PASS" "FA" "PASS" "FA" "PASS" "TestSampling1" "TestSampling2" "FA" "PASS" "FA" "PASS" "FA" "PASS" "COF" "PASS" "RECHECK" "PASS" "RECHECK" "PASS" "LotReject" "PASS" "PASS" "PASS" "ReFVI" } } { "Destination Step" { { class=A1 "SMT1" } "Deflux1" "Deflux1-VI" "ICT1" "DefluxBaking1" "Re-check" "Deflux1" "Baking1-VI" "Deflux1-VI" "UnderfillPlasma1" "Re-check" "Underfill-Loader" "ContactAngle1" "Baking1-VI" "Underfill1" "Underfill-Loader" "UnderfillAOI1" "Underfill-VI" "Re-check" "UnderfillCuring1" "Re-check" "UnderfillAOI1" "Curing-VI" "UnderfillSAT1" "Underfill-VI" "DFU-NAND-INIT" "Re-check" "Curing-IPQC" "WaterCleaning-U1" "FACheck-DFUPanel" "DFU-VI" "Curing-VI" "DFU-NAND-INIT" "SATBaking-U1" "Laser-DFU" "DFU-NAND-INIT" "CarrierToMagazine" "Re-check" "Curing-VI" "LVI-DFU" "MoldingPlasma" "DFU-VI" "FALAB-DFU" "DFU-NAND-INIT" "Molding" "ContactAngle-M" "FASHIP-DFU" "MVI" "MoldingThickness" "Molding" "Panel-To-LaserCarrier" "Re-check" "MoldingSAT" "Molding-IPQC" "PREFCT2" "MoldlingShift" "Laser" "MVI" "WaterCleaning-M" "Panel-To-LaserCarrier" "FACheck-FCTpanel" "TestVI" "MoldingWarpage" "MarkingCheck" "Panel-To-LaserCarrier" "PREFCT2" "Laser-FCT" "PREFCT2" "Panel-To-LaserCarrier" "Re-check" "MVI" "LVI" "MarkingTrenchSize" "MarkingTrenchSize" "LVI-FCT" "TestVI" "DryIceCleaning" "Re-check" "LVI" "CuttingSize" "FALAB-FCT" "PREFCT2" "DICVI" "LVI" "LVI" "FASHIP-FCT" "CPFilling" "Re-check" "CPFillingCuring" "CPFillingX-Ray" "DICVI" "CPFVI" "CPFillingSize2" "CPFillingCuring" "Laser-Carrier-To-Magazine" "Re-check" "CPFVI" "Singulation" "CPFVI" "SGVI" "SingulationSize" "SputterLoad" "Re-check" "Singulation-IPQC" "SGVI" "Sputtering" "SGVI" "SputterLoad" "SputterUnload" "SPFVI" "BEVI" "Re-check" "XRF" "BE-IPQC" "Re-check" "SPFVI" "PeelingTest" "SMT2" "Re-check" "BEVI" "SPFVI" "Deflux2" "BE-IPQC" "Deflux2-VI" "DefluxBaking2" "Re-check" "Baking2-VI" "Deflux2-VI" "Encaps-Loader" "Re-check" "Encaps" "Baking2-VI" "Encaps-VI" "EncapsCuring" "Re-check" "Unit-To-Tray" "EncapsHeightMeasurement" "Encaps-VI" "EncapsCuring-VI" "Unit-To-Tray" "SMT-BURNIN" "Re-check" "FACheck-TEST" "WIFI-BT-COND" "EncapsCuring-VI" "FALAB-TEST" "DFU" "FACheck-TEST" "CELL-CAL" "FASHIP-TEST" "FACheck-TEST" "SMT-BURNIN" "FACheck-TEST" "FDR-EXPORT" "WIFI-COND" "WIFI-BT-COND-2" "FACheck-TEST" "ICOS" "FACheck-TEST" "FDR-EXPORT" "FACheck-TEST" "FDR-EXPORT" "COF-Hold" "FVI" "Re-work-ICOS" "OQC" "Re-check-FVI" "ICOS" "HoldRoom" "Packing" "FVI" "Packing" "FVI" } } { "Seq" { { class=A1 "0010" } "0020" "0030" "0550" "0040" "0600" "0020" "0050" "0030" "0060" "0610" "0065" "0660" "0050" "0070" "0065" "0080" "0090" "0630" "0100" "0620" "0080" "0105" "0670" "0090" "0110" "1490" "1530" "0680" "0700" "0120" "0105" "0110" "0690" "0710" "0110" "0140" "0640" "0105" "0720" "0150" "0120" "1350" "0110" "0160" "0730" "1360" "0170" "1420" "0160" "0200" "1130" "0800" "1540" "0180" "0750" "0205" "0170" "0810" "0200" "0770" "0190" "0760" "0210" "0200" "0180" "0780" "0180" "0200" "0820" "0170" "0220" "1510" "0830" "0790" "0190" "0230" "0850" "0220" "1500" "1370" "0180" "0240" "0220" "0220" "1380" "0250" "0860" "0260" "0900" "0240" "0270" "0910" "0260" "0275" "0920" "0270" "0280" "0270" "0290" "0930" "0300" "0940" "1550" "0290" "0310" "0290" "0300" "0320" "0330" "0340" "0950" "0980" "0350" "1000" "0330" "0990" "0360" "1150" "0340" "0330" "0370" "0350" "0380" "0390" "1010" "0400" "0380" "0405" "1020" "0410" "0400" "0420" "0430" "1030" "0435" "1430" "0420" "0440" "0435" "0450" "1040" "1070" "0460" "0440" "1390" "1080" "1070" "0470" "1400" "1070" "0450" "1070" "0480" "0490" "0500" "1070" "0510" "1070" "0480" "1070" "0480" "1470" "0520" "1520" "0530" "1460" "0510" "1410" "0540" "0520" "0540" "0520" } } { "Stage Name" { { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" } } { "Stage Number" { { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" } } { "Step Revision$$Hidden=True$$" { { class=A1 "0" } "1" "0" "1" "1" "0" "1" "0" "0" "1" "0" "0" "1" "0" "1" "0" "1" "0" "0" "1" "0" "1" "0" "1" "0" "0" "0" "0" "1" "0" "0" "0" "0" "1" "0" "0" "1" "0" "0" "0" "1" "0" "0" "0" "1" "1" "0" "1" "1" "1" "0" "0" "1" "0" "0" "1" "1" "1" "1" "0" "0" "0" "1" "1" "0" "0" "0" "0" "0" "0" "1" "1" "1" "1" "0" "0" "1" "0" "1" "1" "0" "0" "1" "1" "1" "0" "1" "0" "1" "1" "1" "1" "1" "1" "0" "0" "1" "1" "1" "1" "1" "1" "0" "0" "1" "1" "1" "1" "1" "1" "1" "0" "2" "0" "0" "1" "1" "0" "0" "1" "1" "2" "0" "0" "1" "0" "0" "0" "0" "0" "1" "0" "0" "1" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "1" "0" "1" "0" } }
+05/09/20 11:24:05.35 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:foundSteps	Value:T
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oKey=foundSteps
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oValue:
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Source Step	Value:ORDERED { class=A1 " " } "SMT1" "Deflux1" "Deflux1" "Deflux1-VI" "Deflux1-VI" "ICT1" "DefluxBaking1" "Re-check" "Baking1-VI" "Baking1-VI" "UnderfillPlasma1" "UnderfillPlasma1" "Re-check" "Underfill-Loader" "ContactAngle1" "Underfill1" "UnderfillAOI1" "UnderfillAOI1" "Underfill-VI" "Underfill-VI" "Re-check" "UnderfillCuring1" "UnderfillCuring1" "Re-check" "Curing-VI" "Curing-VI" "Curing-VI" "UnderfillSAT1" "DFU-NAND-INIT" "DFU-NAND-INIT" "Re-check" "Curing-IPQC" "WaterCleaning-U1" "FACheck-DFUPanel" "FACheck-DFUPanel" "DFU-VI" "DFU-VI" "SATBaking-U1" "Laser-DFU" "CarrierToMagazine" "Re-check" "LVI-DFU" "LVI-DFU" "MoldingPlasma" "MoldingPlasma" "FALAB-DFU" "Molding" "Molding" "ContactAngle-M" "MVI" "MVI" "MVI" "MVI" "MVI" "MoldingThickness" "Panel-To-LaserCarrier" "Re-check" "MoldingSAT" "Molding-IPQC" "PREFCT2" "PREFCT2" "MoldlingShift" "Laser" "WaterCleaning-M" "WaterCleaning-M" "FACheck-FCTpanel" "FACheck-FCTpanel" "TestVI" "TestVI" "MoldingWarpage" "MarkingCheck" "MarkingCheck" "MarkingCheck" "Laser-FCT" "Re-check" "LVI" "LVI" "MarkingTrenchSize" "MarkingTrenchSize" "LVI-FCT" "LVI-FCT" "DryIceCleaning" "Re-check" "CuttingSize" "FALAB-FCT" "DICVI" "DICVI" "CPFilling" "CPFilling" "Re-check" "CPFillingCuring" "CPFillingCuring" "CPFillingX-Ray" "CPFVI" "CPFVI" "CPFillingSize2" "Laser-Carrier-To-Magazine" "Re-check" "Singulation" "Singulation" "SGVI" "SGVI" "SGVI" "SingulationSize" "SputterLoad" "Re-check" "Singulation-IPQC" "Sputtering" "SputterUnload" "SPFVI" "SPFVI" "SPFVI" "BEVI" "BEVI" "Re-check" "XRF" "BE-IPQC" "BE-IPQC" "Re-check" "PeelingTest" "SMT2" "Re-check" "Deflux2" "Deflux2-VI" "Deflux2-VI" "DefluxBaking2" "Re-check" "Baking2-VI" "Baking2-VI" "Encaps-Loader" "Re-check" "Encaps" "Encaps-VI" "Encaps-VI" "EncapsCuring" "EncapsCuring" "Re-check" "Unit-To-Tray" "EncapsHeightMeasurement" "EncapsCuring-VI" "EncapsCuring-VI" "SMT-BURNIN" "SMT-BURNIN" "Re-check" "FACheck-TEST" "FACheck-TEST" "WIFI-BT-COND" "WIFI-BT-COND" "FALAB-TEST" "DFU" "DFU" "CELL-CAL" "CELL-CAL" "CELL-CAL" "CELL-CAL" "FDR-EXPORT" "FDR-EXPORT" "WIFI-COND" "WIFI-COND" "WIFI-BT-COND-2" "WIFI-BT-COND-2" "ICOS" "ICOS" "ICOS" "FVI" "FVI" "Re-work-ICOS" "OQC" "OQC" "Re-check-FVI" "HoldRoom" "HoldRoom"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Seq.	Value:ORDERED { class=A1 " " } "0010" "0020" "0020" "0030" "0030" "0550" "0040" "0600" "0050" "0050" "0060" "0060" "0610" "0065" "0660" "0070" "0080" "0080" "0090" "0090" "0630" "0100" "0100" "0620" "0105" "0105" "0105" "0670" "0110" "0110" "1490" "1530" "0680" "0700" "0700" "0120" "0120" "0690" "0710" "0140" "0640" "0720" "0720" "0150" "0150" "1350" "0160" "0160" "0730" "0170" "0170" "0170" "0170" "0170" "1420" "0200" "1130" "0800" "1540" "0180" "0180" "0750" "0205" "0810" "0810" "0770" "0770" "0190" "0190" "0760" "0210" "0210" "0210" "0780" "0820" "0220" "0220" "1510" "0830" "0790" "0790" "0230" "0850" "1500" "1370" "0240" "0240" "0250" "0250" "0860" "0260" "0260" "0900" "0270" "0270" "0910" "0275" "0920" "0280" "0280" "0290" "0290" "0290" "0930" "0300" "0940" "1550" "0310" "0320" "0330" "0330" "0330" "0340" "0340" "0950" "0980" "0350" "0350" "1000" "0990" "0360" "1150" "0370" "0380" "0380" "0390" "1010" "0400" "0400" "0405" "1020" "0410" "0420" "0420" "0430" "0430" "1030" "0435" "1430" "0440" "0440" "0450" "0450" "1040" "1070" "1070" "0460" "0460" "1390" "1080" "1080" "0470" "0470" "0470" "0470" "0480" "0480" "0490" "0490" "0500" "0500" "0510" "0510" "0510" "0520" "0520" "1520" "0530" "0530" "1460" "1410" "1410"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Path	Value:ORDERED { class=A1 " " } "PASS" "PASS" "Sampling" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "RECHECK" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "SamplingIPQC" "PASS" "FA" "PASS" "PASS" "PASS" "PASS" "LASERCUT" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "FALAB" "PASS" "PASS" "Sampling" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "Sampling" "SamplingIPQC" "TestSampling" "PASS" "PASS" "PASS" "PASS" "PASS" "FA" "PASS" "PASS" "PASS" "PASS" "TestSampling" "LASERCUT" "PASS" "PASS" "RECHECK" "PASS" "PASS" "Sampling" "SamplingFAI" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "FALAB" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "Sampling" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "Sampling" "PASS" "RECHECK" "SamplingIPQC" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "Sampling" "PASS" "RECHECK" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "RECHECK" "PASS" "PASS" "PASS" "PASS" "RECHECK" "PASS" "Sampling" "PASS" "PASS" "PASS" "PASS" "RECHECK" "FA" "PASS" "PASS" "FALAB" "PASS" "FA" "PASS" "PASS" "FA" "PASS" "FA" "PASS" "TestSampling1" "TestSampling2" "FA" "PASS" "FA" "PASS" "FA" "PASS" "COF" "PASS" "RECHECK" "PASS" "RECHECK" "PASS" "LotReject" "PASS" "PASS" "PASS" "ReFVI"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Destination Step	Value:ORDERED { class=A1 "SMT1" } "Deflux1" "Deflux1-VI" "ICT1" "DefluxBaking1" "Re-check" "Deflux1" "Baking1-VI" "Deflux1-VI" "UnderfillPlasma1" "Re-check" "Underfill-Loader" "ContactAngle1" "Baking1-VI" "Underfill1" "Underfill-Loader" "UnderfillAOI1" "Underfill-VI" "Re-check" "UnderfillCuring1" "Re-check" "UnderfillAOI1" "Curing-VI" "UnderfillSAT1" "Underfill-VI" "DFU-NAND-INIT" "Re-check" "Curing-IPQC" "WaterCleaning-U1" "FACheck-DFUPanel" "DFU-VI" "Curing-VI" "DFU-NAND-INIT" "SATBaking-U1" "Laser-DFU" "DFU-NAND-INIT" "CarrierToMagazine" "Re-check" "Curing-VI" "LVI-DFU" "MoldingPlasma" "DFU-VI" "FALAB-DFU" "DFU-NAND-INIT" "Molding" "ContactAngle-M" "FASHIP-DFU" "MVI" "MoldingThickness" "Molding" "Panel-To-LaserCarrier" "Re-check" "MoldingSAT" "Molding-IPQC" "PREFCT2" "MoldlingShift" "Laser" "MVI" "WaterCleaning-M" "Panel-To-LaserCarrier" "FACheck-FCTpanel" "TestVI" "MoldingWarpage" "MarkingCheck" "Panel-To-LaserCarrier" "PREFCT2" "Laser-FCT" "PREFCT2" "Panel-To-LaserCarrier" "Re-check" "MVI" "LVI" "MarkingTrenchSize" "MarkingTrenchSize" "LVI-FCT" "TestVI" "DryIceCleaning" "Re-check" "LVI" "CuttingSize" "FALAB-FCT" "PREFCT2" "DICVI" "LVI" "LVI" "FASHIP-FCT" "CPFilling" "Re-check" "CPFillingCuring" "CPFillingX-Ray" "DICVI" "CPFVI" "CPFillingSize2" "CPFillingCuring" "Laser-Carrier-To-Magazine" "Re-check" "CPFVI" "Singulation" "CPFVI" "SGVI" "SingulationSize" "SputterLoad" "Re-check" "Singulation-IPQC" "SGVI" "Sputtering" "SGVI" "SputterLoad" "SputterUnload" "SPFVI" "BEVI" "Re-check" "XRF" "BE-IPQC" "Re-check" "SPFVI" "PeelingTest" "SMT2" "Re-check" "BEVI" "SPFVI" "Deflux2" "BE-IPQC" "Deflux2-VI" "DefluxBaking2" "Re-check" "Baking2-VI" "Deflux2-VI" "Encaps-Loader" "Re-check" "Encaps" "Baking2-VI" "Encaps-VI" "EncapsCuring" "Re-check" "Unit-To-Tray" "EncapsHeightMeasurement" "Encaps-VI" "EncapsCuring-VI" "Unit-To-Tray" "SMT-BURNIN" "Re-check" "FACheck-TEST" "WIFI-BT-COND" "EncapsCuring-VI" "FALAB-TEST" "DFU" "FACheck-TEST" "CELL-CAL" "FASHIP-TEST" "FACheck-TEST" "SMT-BURNIN" "FACheck-TEST" "FDR-EXPORT" "WIFI-COND" "WIFI-BT-COND-2" "FACheck-TEST" "ICOS" "FACheck-TEST" "FDR-EXPORT" "FACheck-TEST" "FDR-EXPORT" "COF-Hold" "FVI" "Re-work-ICOS" "OQC" "Re-check-FVI" "ICOS" "HoldRoom" "Packing" "FVI" "Packing" "FVI"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Seq	Value:ORDERED { class=A1 "0010" } "0020" "0030" "0550" "0040" "0600" "0020" "0050" "0030" "0060" "0610" "0065" "0660" "0050" "0070" "0065" "0080" "0090" "0630" "0100" "0620" "0080" "0105" "0670" "0090" "0110" "1490" "1530" "0680" "0700" "0120" "0105" "0110" "0690" "0710" "0110" "0140" "0640" "0105" "0720" "0150" "0120" "1350" "0110" "0160" "0730" "1360" "0170" "1420" "0160" "0200" "1130" "0800" "1540" "0180" "0750" "0205" "0170" "0810" "0200" "0770" "0190" "0760" "0210" "0200" "0180" "0780" "0180" "0200" "0820" "0170" "0220" "1510" "0830" "0790" "0190" "0230" "0850" "0220" "1500" "1370" "0180" "0240" "0220" "0220" "1380" "0250" "0860" "0260" "0900" "0240" "0270" "0910" "0260" "0275" "0920" "0270" "0280" "0270" "0290" "0930" "0300" "0940" "1550" "0290" "0310" "0290" "0300" "0320" "0330" "0340" "0950" "0980" "0350" "1000" "0330" "0990" "0360" "1150" "0340" "0330" "0370" "0350" "0380" "0390" "1010" "0400" "0380" "0405" "1020" "0410" "0400" "0420" "0430" "1030" "0435" "1430" "0420" "0440" "0435" "0450" "1040" "1070" "0460" "0440" "1390" "1080" "1070" "0470" "1400" "1070" "0450" "1070" "0480" "0490" "0500" "1070" "0510" "1070" "0480" "1070" "0480" "1470" "0520" "1520" "0530" "1460" "0510" "1410" "0540" "0520" "0540" "0520"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Stage Name	Value:ORDERED { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Stage Number	Value:ORDERED { class=A1 " " } "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:Step Revision$$Hidden=True$$	Value:ORDERED { class=A1 "0" } "1" "0" "1" "1" "0" "1" "0" "0" "1" "0" "0" "1" "0" "1" "0" "1" "0" "0" "1" "0" "1" "0" "1" "0" "0" "0" "0" "1" "0" "0" "0" "0" "1" "0" "0" "1" "0" "0" "0" "1" "0" "0" "0" "1" "1" "0" "1" "1" "1" "0" "0" "1" "0" "0" "1" "1" "1" "1" "0" "0" "0" "1" "1" "0" "0" "0" "0" "0" "0" "1" "1" "1" "1" "0" "0" "1" "0" "1" "1" "0" "0" "1" "1" "1" "0" "1" "0" "1" "1" "1" "1" "1" "1" "0" "0" "1" "1" "1" "1" "1" "1" "0" "0" "1" "1" "1" "1" "1" "1" "1" "0" "2" "0" "0" "1" "1" "0" "0" "1" "1" "2" "0" "0" "1" "0" "0" "0" "0" "0" "1" "0" "0" "1" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "0" "1" "0" "1" "0"
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - StepName=WIFI-COND
+05/09/20 11:24:05.36 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - stepSeq=0490
+05/09/20 11:24:05.36 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Input override started...
+05/09/20 11:24:05.36 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Input override finished...
+05/09/20 11:24:05.36 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Preparation
+05/09/20 11:24:05.36 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLotsExt - Processing started...
+05/09/20 11:24:05.36 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Processing started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Processing finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue started...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetAttrValue finished...
+05/09/20 11:24:05.95 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuGetStringAttrValue finished...
+05/09/20 11:24:05.97 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - oWipStep.getRObject():
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - updateCarriersStepLoc started...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuSelectRawSql started...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - cuSelectRawSql finished...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - updateCarriersStepLoc finished...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLotsExt - Processing finished...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Reply started...
+05/09/20 11:24:05.98 DTPFsrv.17:fwRepositionLots:CAPITraceDiagnostic - RepositionLots - Reply finished...
+05/09/20 11:24:05.98 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oResult:
+05/09/20 11:24:05.98 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:confirmation	Value:Lot A20050200041.036 repositioned.
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - oWipStep.getRObject():
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - outAttrs:
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:VALUE	Value:PARAMETER
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:RETURN_CODE	Value:0
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - ---> Key:RETURN_MESSAGE	Value:Success
+05/09/20 11:24:05.99 DTPFsrv.17:INT_GetUnitUOP:CAPITraceDiagnostic - INT_GetUnitUOP finished...

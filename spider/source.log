@@ -1,0 +1,219 @@
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:FwEventManager:message to process: :>>L FwExecuteServerSideRuleTxn name="StreeTest_OC_Com_EdcDataCollection" attributes={ { class=ASSOC { class=A1 "HISTORYSTR" } { class=A1 "USER^AMA|LOTID^A20031900001.012|BUYOFFPASS^F|PROCESSINGTOOL^E11SAW002|EDCPLANNAME^PeelingTest|EDCTYPE^Monitor|TRIGGERCAUSE^|BFCODE^|COMMENTCODE^Comment|BRIEFCOMMENT^|RULEATTRS^|EQPID^E11SAW002" } } { { class=A1 "CLIENTID" } { class=A1 "20FRS1DR90MC59K.15676" } } { { class=A1 "EQPID" } { class=A1 "E11SAW002" } } { { class=A1 "LOTID" } { class=A1 "A20031900001.012" } } { { class=A1 "USER" } { class=A1 "FwAdmin" } } { { class=A1 "ACTIVITY" } { class=A1 "twDColLot" } } { { class=A1 "FWCLIENT" } { class=A1 "20FRS1DR90MC59K.15676" } } { { class=A1 "STEP" } { class=A1 "PeelingTest.1" } } { { class=A1 "saveHistory" } { class=A1 "T" } } { { class=A1 "PRODUCTNAME" } { class=A1 "122-000000-378H" } } { { class=A1 "PROCESSID" } { class=A1 "HT.1" } } { { class=A1 "STEPID" } { class=A1 "PeelingTest" } } { { class=A1 "LOTKIND" } { class=A1 "Assembly" } } { { class=A1 "PROCESSEQPID" } { class=A1 "E11SAW002" } } { { class=A1 "EDCTYPE" } { class=A1 "EDC" } } { { class=A1 "EDCPLAN" } { class=A1 "PeelingTest" } } { { class=A1 "MEASUREEQPID" } { class=A1 "" } } }
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetAttrValue finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetStringAttrValue finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetStringAttrValue started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetAttrValue started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetAttrValue finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - cuGetStringAttrValue finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - StreeTest_OC_Com_EdcDataCollection started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - inAttrs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT StepType FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'PeelingTest'  and s.revision = '1' 
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:ACTIVITY	Value:twDColLot
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:CLIENTID	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EDCPLAN	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EDCTYPE	Value:EDC
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:FWCLIENT	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:HISTORYSTR	Value:USER^AMA|LOTID^A20031900001.012|BUYOFFPASS^F|PROCESSINGTOOL^E11SAW002|EDCPLANNAME^PeelingTest|EDCTYPE^Monitor|TRIGGERCAUSE^|BFCODE^|COMMENTCODE^Comment|BRIEFCOMMENT^|RULEATTRS^|EQPID^E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:LOTID	Value:A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:LOTKIND	Value:Assembly
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:MEASUREEQPID	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PROCESSEQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PROCESSID	Value:HT.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PRODUCTNAME	Value:122-000000-378H
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:STEP	Value:PeelingTest.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:STEPID	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:USER	Value:FwAdmin
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:saveHistory	Value:T
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:FwEventManager:message to process: :>>L FwExecuteServerSideRuleTxn subjectName="FwExecuteServerSideRuleTxn" msgTag="" sendAck=F systemLevelObjects={ } allReferences={ } dirtySubObjects={ } securityContext="" defaultPartitionId=-1 isSecure=F name="twPreRule" attributes={ { class=ASSOC { class=A1 "EQPID" } { class=A1 "Packing" } } { "FWCLIENT" "20FRS1DR90MC59K.15676" } { "LOCATION" "Packing" } { "LOT" "A20031900001.020" } { "LOTID" "A20031900001.020" } { "PLAN" "HT.5" } { "PRODUCT" "122-000000-K68H.0" } { "ReturnPath" "" } { "SEQUENCE" "210" } { "STEP" "Packing_1.0" } { "SrcRuleName" "ER_Com_TrackOut" } { "TIMESTAMP" "68" } { "USER" "FwAdmin" } }
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - OC_Com_EdcDataCollection started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - inAttrs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:ACTIVITY	Value:twDColLot
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:CLIENTID	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EDCPLAN	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EDCTYPE	Value:EDC
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:EQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:FWCLIENT	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:HISTORY	Value:ORDERED { class=ASSOC { class=A1 "USER" } { class=ORDERED { class=A1 "AMA" } } } { "LOTID" { { class=A1 "A20031900001.012" } } } { "BUYOFFPASS" { { class=A1 "F" } } } { "PROCESSINGTOOL" { { class=A1 "E11SAW002" } } } { "EDCPLANNAME" { { class=A1 "PeelingTest" } } } { "EDCTYPE" { { class=A1 "Monitor" } } } { "TRIGGERCAUSE" { { class=A1 "" } } } { "BFCODE" { { class=A1 "" } } } { "COMMENTCODE" { { class=A1 "Comment" } } } { "BRIEFCOMMENT" { { class=A1 "" } } } { "RULEATTRS" { { class=A1 "" } } } { "EQPID" { { class=A1 "E11SAW002" } } }
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:HISTORYSTR	Value:USER^AMA|LOTID^A20031900001.012|BUYOFFPASS^F|PROCESSINGTOOL^E11SAW002|EDCPLANNAME^PeelingTest|EDCTYPE^Monitor|TRIGGERCAUSE^|BFCODE^|COMMENTCODE^Comment|BRIEFCOMMENT^|RULEATTRS^|EQPID^E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:LOTID	Value:A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:LOTKIND	Value:Assembly
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:MEASUREEQPID	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PROCESSEQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PROCESSID	Value:HT.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:PRODUCTNAME	Value:122-000000-378H
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:STEP	Value:PeelingTest.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:STEPID	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:USER	Value:FwAdmin
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:saveHistory	Value:T
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - sLotId: A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - sEqpId: E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - OC_Com_SpaceSending started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - inAttrs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:ACTIVITY	Value:twDColLot
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:CLIENTID	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:EDCPLAN	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:EDCTYPE	Value:EDC
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:EQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:FWCLIENT	Value:20FRS1DR90MC59K.15676
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:HISTORY	Value:ORDERED { class=ASSOC { class=A1 "USER" } { class=ORDERED { class=A1 "AMA" } } } { "LOTID" { { class=A1 "A20031900001.012" } } } { "BUYOFFPASS" { { class=A1 "F" } } } { "PROCESSINGTOOL" { { class=A1 "E11SAW002" } } } { "EDCPLANNAME" { { class=A1 "PeelingTest" } } } { "EDCTYPE" { { class=A1 "Monitor" } } } { "TRIGGERCAUSE" { { class=A1 "" } } } { "BFCODE" { { class=A1 "" } } } { "COMMENTCODE" { { class=A1 "Comment" } } } { "BRIEFCOMMENT" { { class=A1 "" } } } { "RULEATTRS" { { class=A1 "" } } } { "EQPID" { { class=A1 "E11SAW002" } } }
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:HISTORYSTR	Value:USER^AMA|LOTID^A20031900001.012|BUYOFFPASS^F|PROCESSINGTOOL^E11SAW002|EDCPLANNAME^PeelingTest|EDCTYPE^Monitor|TRIGGERCAUSE^|BFCODE^|COMMENTCODE^Comment|BRIEFCOMMENT^|RULEATTRS^|EQPID^E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:LOTID	Value:A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:LOTKIND	Value:Assembly
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:MEASUREEQPID	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:PROCESSEQPID	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:PROCESSID	Value:HT.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:PRODUCTNAME	Value:122-000000-378H
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:STEP	Value:PeelingTest.1
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:STEPID	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:USER	Value:FwAdmin
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:saveHistory	Value:T
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - dict:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - extractorKeyOrdered:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - dataKeyOrdered:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - spaceReportCltn:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - #################################
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - spaceReportCollection:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - outAttrs collection:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - oUserName:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Value:AMA
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - oInAttrs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:BFCode	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:EqpId	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:QCType	Value:Monitor
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:RuleAttrs	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:TriggerCause	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:briefComment	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:buyOffPass	Value:F
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:commentCode	Value:Comment
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:edcPlanName	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:lotId	Value:A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:processingTool	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - ---> Key:user	Value:AMA
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - OC_Com_DataCollection started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - inAttrs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:BFCode	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:EqpId	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:QCType	Value:Monitor
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:RuleAttrs	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:TriggerCause	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:briefComment	Value:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:buyOffPass	Value:F
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:commentCode	Value:Comment
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:edcPlanName	Value:PeelingTest
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:lotId	Value:A20031900001.012
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:processingTool	Value:E11SAW002
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - ---> Key:user	Value:AMA
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - tuSplitWithStrLength started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - tuSplitWithStrLength finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - WF_Com_PreRule started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT StepType FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'Packing_1'  and s.revision = '0' 
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - getIdleStartType started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - str=SELECT P.VALDATA FROM FWEQPEQUIPMENT E, FWEQPTYPE_PN2M P WHERE E.EQPTYPE = P.fromid AND P.KEYDATA = 'IdleStartType' AND E.name = 'E11SAW002' 
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - cuSelectRawSql started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - oStepSpecs:
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sMsg=Return Success.  Step doesn't require certifications
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - cuSelectRawSql finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - sIdleStartType=
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - getIdleStartType finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT StepGroup FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'Packing_1'  and s.revision = '0' 
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.98 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - cuSelectRawSql started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - cuSelectRawSql finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT Recipe FROM FwExtProcessSpec s, fwflatnode f WHERE s.parent = f.sysid AND s.handle='R21' AND s.plan='HT' AND s.planstartversion<=5 AND s.planstopversion>5 AND s.product='122-000000-K68H' AND s.productstartversion<=0 AND s.productstopversion>0 AND f.startversion <= 5 AND f.stopversion > 5 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=      Recipe
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - underline=+------ 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT S.Recipe FROM FWEXTPROCESSSPEC S, FWFLATNODE N WHERE  1 = 1 AND S.HANDLE = 'R21' AND S.PRODUCT IS NULL AND S.PLAN = 'HT' AND S.PARENT = N.SYSID AND S.PLANSTARTVERSION <= '5' AND S.PLANSTOPVERSION > '5' AND N.HANDLE = 'R21' AND N.STARTVERSION <= '5' AND N.STOPVERSION > '5' 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSplitWithStrLength started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=      Recipe
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - underline=+------ 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=    1|      
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSplitWithStrLength finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT Tooling FROM FwExtProcessSpec s, fwflatnode f WHERE s.parent = f.sysid AND s.handle='R21' AND s.plan='HT' AND s.planstartversion<=5 AND s.planstopversion>5 AND s.product='122-000000-K68H' AND s.productstartversion<=0 AND s.productstopversion>0 AND f.startversion <= 5 AND f.stopversion > 5 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=      Tooling
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - underline=+------- 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - sSqlStatement=SELECT S.Tooling FROM FWEXTPROCESSSPEC S, FWFLATNODE N WHERE  1 = 1 AND S.HANDLE = 'R21' AND S.PRODUCT IS NULL AND S.PLAN = 'HT' AND S.PARENT = N.SYSID AND S.PLANSTARTVERSION <= '5' AND S.PLANSTOPVERSION > '5' AND N.HANDLE = 'R21' AND N.STARTVERSION <= '5' AND N.STOPVERSION > '5' 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=      Name             Value                                                                       
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - underline=+---------------- ---------------------------------------------------------------------------- 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    1|TrackingMode     LotTrackOut                                                                 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    2|CarrierTracking  F                                                                           
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    3|EqpSelectionMode Area                                                                        
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    4|TrackOutMode     Normal                                                                      
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    5|TrackOutList     <UITable>4,1,TrackInEqp,SPT,TrackInQty,1,TrackOutQty,1,OldCarrier,</UITable>
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    6|RecipeId                                                                                     
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=      Tooling
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - underline=+------- 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.5:twPreRule:CAPITraceDiagnostic - line=    1|       
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    7|CheckPiecePart   F                                                                           
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    8|OperationType    ot-Sputter                                                                  
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    9|FullyTrackOut    T                                                                           
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=   10|StepPathName                                                                                 
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=   11|YieldIgnore      F                                                                           
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSplitWithStrLength started...
+Tue Apr 28 2020 20:01:54.99 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSplitWithStrLength finished...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=      TrackInEqp TrackInQty TrackOutQty OldCarrier
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - underline=+---------- ---------- ----------- ---------- 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=    1|SPT        1          1                     
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT CarrierExchange FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'PeelingTest'  and s.revision = '1' 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT CheckCycleTime FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'PeelingTest'  and s.revision = '1' 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT YieldLimit FROM FwExtProcessSpec s, fwflatnode f WHERE s.parent = f.sysid AND s.handle='R7' AND s.plan='HT' AND s.planstartversion<=5 AND s.planstopversion>5 AND s.product='122-000000-K68H' AND s.productstartversion<=0 AND s.productstopversion>0 AND f.startversion <= 5 AND f.stopversion > 5 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=      YieldLimit
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - underline=+---------- 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT S.YieldLimit FROM FWEXTPROCESSSPEC S, FWFLATNODE N WHERE  1 = 1 AND S.HANDLE = 'R7' AND S.PRODUCT IS NULL AND S.PLAN = 'HT' AND S.PARENT = N.SYSID AND S.PLANSTARTVERSION <= '5' AND S.PLANSTOPVERSION > '5' AND N.HANDLE = 'R7' AND N.STARTVERSION <= '5' AND N.STOPVERSION > '5' 
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - line=      YieldLimit
+Tue Apr 28 2020 20:01:55.00 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - underline=+---------- 
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT CheckCodeChange FROM fwstepversion s, twstepversion et   where s.sysid = et.parent and s.stepname = 'PeelingTest'  and s.revision = '1' 
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.1:ER_Com_TrackOut:CAPITraceDiagnostic - sTrackingMode=LotTrackOut
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - cuSelectRawSql finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT ConstraintType,TimeCheckStep,TimeLimit,ActionType,HoldCode,AlarmSource,AlarmClass,MitigationStep,MitigationLimit,DryBoxLimit,ETSysId FROM fwstepversion s, (Select t.*,t.SysId as ETSysId From TwStepTimeConstraint t) et   where s.sysid = et.parent and s.stepname = 'PeelingTest' and et.productid='122-000000-K68H.0' and s.revision = '1' 
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:oc_com_datacollection:CAPITraceDiagnostic - OC_Com_DataCollection finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - oDataCollectionResult:
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - Rule complete.
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:oc_com_spacesending:CAPITraceDiagnostic - OC_Com_SpaceSending finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - oDataCollectionResult:
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.2:OC_Com_FetchDCRequiredFlag:CAPITraceDiagnostic - LQueryDCRequired started...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT ConstraintType,TimeCheckStep,TimeLimit,ActionType,HoldCode,AlarmSource,AlarmClass,MitigationStep,MitigationLimit,DryBoxLimit,ETSysId FROM fwstepversion s, (Select t.*,t.SysId as ETSysId From TwStepTimeConstraint t) et   where s.sysid = et.parent and s.stepname = 'PeelingTest' and (et.productid=' ' or et.productid is null) and s.revision = '1' 
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - sSqlStatement=SELECT et.ProcessStep, et.ProcessTool, et.CurrentCount, et.IntervalCount, et.SampleStep, et.SysId, et.SampleType, et.Message FROM fwproductversion p, TwProductSampling et   where p.sysid = et.parent and p.productname = '122-000000-K68H'  and p.revision = '0' 
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable started...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - tuSelectTable finished...
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.4:ER_Com_TrackOut:CAPITraceDiagnostic - Executing Work Lot transaction for Lot: A20031900001.006
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.3:twPreRule:CAPITraceDiagnostic - oBinds:
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.3:twPreRule:CAPITraceDiagnostic - ---> Key::lotId	Value:A20031900001.011
+Tue Apr 28 2020 20:01:55.01 DTPFsrv.3:twPreRule:CAPITraceDiagnostic - modifyExt started...
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:OC_Com_FetchDCRequiredFlag:CAPITraceDiagnostic - sRuleName = twTrackIn
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:OC_Com_FetchDCRequiredFlag:CAPITraceDiagnostic - LQueryDCRequired finished...
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - oDCRFlag:
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:isDCRequired	Value:F
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:isVerifyUnit	Value:F
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - ---> Key:isParaTraceRequired	Value:F
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - OOSAction Begin.
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:oc_com_edcdatacollection:CAPITraceDiagnostic - OC_Com_EdcDataCollection finished...
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - oDataCollectionResult:
+Tue Apr 28 2020 20:01:55.02 DTPFsrv.2:StreeTest_oc_com_edcdatacollection:CAPITraceDiagnostic - StreeTest_OC_Com_EdcDataCollection finished...
