@@ -1,0 +1,22 @@
+# 1. 分布式
+# 2. 松散的数据结构（json）
+# 3. 查询语言强大
+
+#1. 文档
+# 可看作为dict :  {"name":"alan", "scroe_list": {"chinaese":90}}
+#
+#2. 集合
+# 一组文档， 就是一堆dict
+#
+#3. 数据库
+# 多个集合做成一个数据库
+#图书馆 / 书架 / 书
+
+def  aa():
+    return 1+1
+
+d=aa()
+print (d)
+
+# 匿名函数
+add = lambda a,b:a+b
