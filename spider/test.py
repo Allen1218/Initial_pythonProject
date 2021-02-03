@@ -41,12 +41,12 @@
 #pyinstaller -F test.py
 #pyinstaller -F -i  cat_500600.jpg
 
-print("提示：1.源文件请命名为 source.log !")
-print("提示：2.输出的文件名为 OutPut.txt!")
+print("Tip：1. Please source file name to source.log !")
+print("Tip：2. Output file name --- Put.txt!")
 
-str = input("请输入，您要保留行的关键字：")
-print ("您输入的保留行关键字是(例如 DTPFsrv.1): ", str)
+str = input("Please input your reserved key words (ie.. DTPFsrv.1):")
+print ("You already inputed key words : ", str)
 
-b=[x for x in open('DLC017700GBPH31A7_UOP.log').readlines() if x.find(str)>-1]
-with open('OutPut_DLC017700GBPH31A7_UOP.txt','w') as f:
+b=[x for x in open('source.log').readlines() if x.find(str)>-1]
+with open('OutPut.txt','w') as f:
     f.writelines(b)

@@ -69,8 +69,8 @@ def craml_joke_list(page=1):
 
     # time.sleep(1)
 
-if __name__=='1__main__':
-    a=10
-    print(a)
-    for i in range(1, a):
-        craml_joke_list()
+# if __name__=='1__main__':
+#     a=10
+#     print(a)
+#     for i in range(1, a):
+#         craml_joke_list()

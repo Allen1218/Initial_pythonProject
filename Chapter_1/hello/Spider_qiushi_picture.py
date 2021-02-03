@@ -38,5 +38,5 @@ def craml(page=1):
             craml_image(image_url, local_path + strs)
 
 
-if __name__=='__main__':
-    craml()
+# if __name__=='__main__':
+#     craml()

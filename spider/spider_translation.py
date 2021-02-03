@@ -1,8 +1,7 @@
-import urllib.request
-import urllib.parse
 import json
 import time
-
+import urllib.parse
+import urllib.request
 
 while True:
     content = input('''请输入需要翻译的内容 (输入"q!"退出程序)：''')
